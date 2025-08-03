@@ -1,0 +1,29 @@
+.entry {
+  max-width: 746px;
+
+  &-form {
+    background-image: url(../images/login-bg.png);
+    padding: 120px 80px;
+    border-radius: 12px;
+  }
+
+  &-link {
+    padding: 12px;
+    border: 1px solid $neutral-300;
+    border-radius: 4px;
+    background-color: $neutral-0;
+
+    &:hover {
+      background-color: $neutral-300;
+    }
+  }
+
+  &-image {
+    height: 100%;
+    background-image: url("../images/login.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+  }
+}

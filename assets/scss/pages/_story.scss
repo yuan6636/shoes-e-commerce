@@ -1,0 +1,107 @@
+/* Component */
+.section-border {
+  border-bottom: 1px solid $neutral-300;
+}
+
+/* Hero section */
+.hero-section {
+  padding: 151px 0;
+  background-image: url("../images/hero-sm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: overlay;
+  text-align: center;
+  color: $neutral-0;
+
+  @include tablet {
+    padding: 87px 0;
+  }
+}
+
+/* Main */
+.main-container {
+  max-width: 856px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  .quote {
+    padding: 32px;
+    border-radius: 12px;
+    background-color: $primary-100;
+    text-align: center;
+
+    @include tablet {
+      padding: 24px;
+      text-align: left;
+    }
+  }
+}
+
+.brand-img {
+  max-width: 1076px;
+  margin-left: -110px;
+  margin-right: -110px;
+
+  @include tablet {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0px;
+    padding-right: 8px;
+  }
+}
+
+.brand-history-list {
+  list-style-type: disc;
+  padding-left: 24px;
+
+  .history-divider {
+    border-left: 1px solid $neutral-900;
+    padding-left: 8px;
+  }
+}
+
+
+.value {
+  padding: 0 12px;
+  border-left: 3px solid $neutral-300;
+}
+
+.story-link {
+  padding: 8px 0;
+  color: $primary-400;
+  font-weight: 500;
+
+  .link-border {
+    display: inline-block;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $primary-400;
+
+    &:hover {
+      border-color: $neutral-900;
+    }
+  }
+
+  .arrow-up {
+    padding: 2px;
+  }
+}
+
+
+/* Footer */
+.footer-nav .logo {
+  @include mobile {
+    margin-bottom: 8px;
+  }
+}
+
+/* Media query */
+@media (max-width: 1200px) {
+  .brand-img {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

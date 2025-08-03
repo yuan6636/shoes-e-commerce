@@ -1,0 +1,30 @@
+/* Button */
+.btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+
+  &.filled {
+    background-color: $neutral-900;
+    color: $neutral-0;
+  }
+}
+
+.btn-underline {
+  border-bottom: 2px solid $neutral-300;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: $neutral-600;
+  line-height: 1.2;
+
+  &.active {
+    border-color: $neutral-900;
+    color: $neutral-900;
+  }
+
+  &:hover {
+    border-color: $neutral-900;
+    color: $neutral-900;
+  }
+}

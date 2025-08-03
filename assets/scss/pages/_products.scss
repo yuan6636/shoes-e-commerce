@@ -1,0 +1,107 @@
+// Global
+.py-7 {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.category-list {
+  font-weight: 500;
+
+  & .active {
+    color: $primary-400;
+  }
+  & li {
+    &:hover {
+      color: $primary-400;
+    }
+  }
+}
+
+.card-list {
+  row-gap: 48px;
+  @include tablet {
+    row-gap: 24px;
+  }
+}
+
+/* Pagination */
+.page {
+  & button {
+    padding: 8px 15px;
+
+    &:hover {
+      background-color: #F8F9FA;
+    }
+
+    &:active {
+      background-color: $primary-300;
+    }
+  }
+
+  &.active {
+    background-color: $primary-300;
+    font-weight: 500;
+  }
+
+  &-icon {
+    & button {
+      padding: 10px;
+    }
+
+    & img {
+      display: block;
+    }
+
+    &.disabled {
+      opacity: 0.4;
+    }
+
+    & .chevron-right {
+      &:hover {
+        background-color: #F8F9FA;
+      }
+
+      &:active {
+        background-color: $primary-300;
+      }
+    }
+  }
+
+  &-dots {
+    padding: 8px 15px;
+  }
+}
+
+/* Media query */
+@include tablet {
+  .px-md-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .py-md-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .products-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .product-col-md {
+    &-6 {
+      padding-left: 6px;
+      padding-right: 6px;
+      width: calc(100% / $grid-columns * 6);
+    }
+
+    &-12 {
+      padding-left: 6px;
+      padding-right: 6px;
+      width: 100%;
+    }
+  }
+} 

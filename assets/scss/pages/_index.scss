@@ -1,0 +1,276 @@
+.py-5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.btn-primary-300 {
+  background-color: $primary-300;
+  color: $neutral-900;
+  &:hover {
+    background-color: $neutral-900;
+    color: $primary-300;
+  }
+}
+
+.bg-primary-100 {
+  background-color: $primary-100;
+  &:hover {
+    background-color: $primary-200;
+  }
+}
+
+// Hero section
+.hero {
+  &-page {
+    padding-top: 289px;
+    padding-bottom: 288px;
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $neutral-0;
+  }
+
+  &-content {
+    margin-left: 200px;
+  }
+}
+
+// Main
+.new-arrival-list {
+  row-gap: 40px;
+}
+
+.best-seller-link {
+  position: relative;
+
+  .badge-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .badge {
+      display: block;
+      padding: 8px 12px;
+      font-weight: 500;
+      font-size: 14px;
+      color: $primary-400;
+      background-color: $primary-100;
+    }
+  }
+}
+
+// Promotion section
+.promotion-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("../images/banner-co-branded.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $neutral-0;
+  text-align: center;
+  position: relative;
+  
+  &-title {
+    margin-bottom: 16px;
+  }
+
+  &-intro {
+    font-size: 20px;
+    color: $neutral-500;
+  }
+
+  .star {
+    width: 48px;
+    position: absolute;
+    top: 68px;
+    left: calc(50% - 397px);
+  }
+
+  .sparkle {
+    width: 76px;
+    position: absolute;
+    bottom: 132px;
+    right: calc(50% - 357px);
+  }
+}
+
+.x {
+  padding: 0 24px;
+  line-height: 1.2;
+  color: $primary-300;
+  vertical-align: top;
+}
+
+// Category section
+.category-link {
+  position: relative;
+
+  .category-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(black, 0.4);
+    color: $neutral-0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.inspiration {
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+  }
+  &-col {
+    &-4 {
+      padding: 4px;
+      width: calc(100% / 12 * 4);
+    }
+    &-6 {
+      padding: 4px;
+      width: calc(100% / 12 * 6);
+    }
+    &-12 {
+      padding: 4px;
+      width: calc(100% / 12 * 12);
+    }
+  }
+  @include tablet {
+    &-row {
+      flex-wrap: nowrap;
+      margin: 0 -8px;
+    }
+    &-col {
+      &-4,
+      &-6,
+      &-12 {
+        width: unset;
+        min-width: 316px;
+        padding: 0 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1082px) {
+  .h6-lg {
+    font-weight: 700;
+    font-size: 16px;
+  }
+}
+
+@include tablet {
+  .py-md-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .display-text-md {
+    &-2 {
+      font-weight: 700;
+      font-size: 48px;
+    }
+  }
+
+  .hero {
+    &-page {
+      padding: 155px 24px;
+      background-image: url("../images/banner-sm.png");
+    }
+    &-content {
+      margin: 0; 
+    }
+  }
+
+  .new-arrival {
+    &-list {
+      row-gap: 24px;
+    }
+    &-row-md {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -6px;
+      margin-right: -6px;
+    }
+    &-col-6-md {
+      padding-left: 6px;
+      padding-right: 6px;
+      width: calc(100% / 12 * 6);
+    }
+  }
+  
+  .best-seller {
+    &-row {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    &-col {
+      width: unset;
+      min-width: 316px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
+  .promotion-section {
+    padding: 64px 12px;
+    background-image: url("../images/banner-co-branded-sm.png");
+    overflow-x: hidden;
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &-intro {
+      font-size: 16px;
+    }
+
+    .star {
+      top: 32px;
+      left: calc(50% - 207.5px);
+    }
+
+    .sparkle {
+      bottom: 104px;
+      right: calc(50% - 215.5px);
+    }
+  }
+
+  .category {
+    &-row-md {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -6px;
+    }
+    &-col-6-md {
+      padding: 6px;
+      width: calc(100% / 12 * 6);
+    }
+  }
+}
+
+@include mobile {
+  .d-sm-flex {
+    display: flex;
+  }
+
+  .flex-1 {
+    flex: 1;
+  }
+
+  .menu-list {
+    font-weight: 500;
+    text-align: center;
+  }
+}

@@ -1,0 +1,123 @@
+// Spacing
+.mb {
+  &-4 {
+    margin-bottom: 4px;
+  }
+
+  &-8 {
+    margin-bottom: 8px;
+  }
+
+  &-12 {
+    margin-bottom: 12px;
+  }
+
+  &-16 {
+    margin-bottom: 16px;
+  }
+
+  &-24 {
+    margin-bottom: 24px;
+  }
+
+  &-32 {
+    margin-bottom: 32px;
+  }
+  
+  &-48 {
+    margin-bottom: 48px;
+  }
+}
+
+.me {
+  &-8 {
+    margin-right: 8px;
+  }
+
+  &-12 {
+    margin-right: 12px;
+  }
+
+  &-16 {
+    margin-right: 16px;
+  }
+
+  &-20 {
+    margin-right: 20px;
+  }
+
+  &-24 {
+    margin-right: 24px;
+  }
+
+  &-40 {
+    margin-right: 40px;
+  }
+
+  &-48 {
+    margin-right: 48px;
+  }
+}
+
+.mx-12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.pt {
+  &-32 {
+    padding-top: 32px;
+  }
+
+  &-40 {
+    padding-top: 40px;
+  }
+
+  &-48 {
+    padding-top: 48px;
+  }
+}
+
+.pb-48 {
+  padding-bottom: 48px;
+}
+
+.pe-24 {
+  padding-right: 24px;
+}
+
+.py {
+  &-9 {
+    padding: 9px 0;
+  }
+
+  &-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  &-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &-48 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  &-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}

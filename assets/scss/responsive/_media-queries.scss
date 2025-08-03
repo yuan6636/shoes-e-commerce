@@ -1,0 +1,300 @@
+@include tablet {
+  // Text
+  .h2-md {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .h3-md {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .h4-md {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .h5-md {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .h6-md {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  // Padding
+  .p-0-md {
+    padding: 0;
+  }
+
+  .px-md {
+    &-0 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &-8 {
+      padding-left: 8;
+      padding-right: 8;
+    }
+    
+    &-12 {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+
+  .py-md {
+    &-0 {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &-8 {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+
+    &-12 {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    &-24 {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+
+    &-32 {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    &-40 {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    &-64 {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+  }
+
+  .pt-md-24 {
+    padding-top: 24px;
+  }
+
+  .pb-md-32 {
+    padding-bottom: 32px;
+  }
+
+  // Margin
+  .mb-md {
+    &-0 {
+      margin-bottom: 0px;
+    }
+
+    &-4 {
+      margin-bottom: 4px;
+    }
+
+    &-8 {
+      margin-bottom: 8px;
+    }
+
+    &-12 {
+      margin-bottom: 12px;
+    }
+
+    &-16 {
+      margin-bottom: 16px;
+    }
+
+    &-24 {
+      margin-bottom: 24px;
+    }
+
+    &-32 {
+      margin-bottom: 32px;
+    }
+  }
+
+  .me-md {
+    &-8 {
+      margin-right: 8px;
+    }
+    &-16 {
+      margin-right: 16px;
+    }
+  }
+  
+  // Display
+  .d-md {
+    &-none {
+      display: none;
+    }
+    &-block {
+      display: block;
+    }
+    &-flex {
+      display: flex;
+    }
+  }
+
+  // Flex
+  .flex-column-md {
+    flex-direction: column;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  // Other
+  .btn-md {
+    padding: 8px 16px;
+  }
+
+  .breadcrumb {
+    &-list {
+      font-size: 14px;
+      padding: 2px 0;
+    }
+
+    &-item {
+      & + .breadcrumb-item::before {
+        margin: 0 8px;
+      }
+    }
+  }
+
+  .entry {
+    &-image {
+      height: 240px;
+      background-image: url("../images/login-sm.png");
+      background-position: center top;
+      border-radius: 0;
+    }
+
+    &-form {
+      background-image: unset;
+      padding: 32px 12px;
+      border-radius: 0;
+    }
+  }
+
+}
+
+@include mobile {
+  // Text
+  .h3-sm {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .h4-sm {
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  .h5-sm {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .h6-sm {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  // Padding
+  .px-sm {
+    &-12 {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    &-24 {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+  .py-sm {
+    &-12 {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    &-16 {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    &-32 {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .pt-sm-24 {
+    padding-top: 24px;
+  }
+
+  .pb-sm-32 {
+    padding-bottom: 32px;
+  }
+
+  // Margin
+  .mb-sm {
+    &-4 {
+      margin-bottom: 4px;
+    }
+
+    &-8 {
+      margin-bottom: 8px;
+    }
+
+    &-12 {
+      margin-bottom: 12px;
+    }
+
+    &-16 {
+      margin-bottom: 16px;
+    }
+
+    &-32 {
+      margin-bottom: 32px;
+    }
+  }
+
+  .me-sm {
+    &-8 {
+      margin-right: 8px;
+    }
+
+    &-16 {
+      margin-right: 16px;
+    }
+  }
+
+  // Display
+  .d-sm {
+    &-none {
+      display: none;
+    }
+
+    &-block {
+      display: block;
+    }
+  }
+
+  // Other
+  .btn-sm {
+    padding: 8px 16px;
+  }
+}

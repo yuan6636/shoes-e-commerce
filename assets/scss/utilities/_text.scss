@@ -1,0 +1,28 @@
+// 文字
+.fw-500 {
+  font-weight: 500;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-neutral-600 {
+  color: $neutral-600;
+}
+
+.text-primary-400 {
+  color: $primary-400;
+}
+
+.display-text {
+  &-1 {
+    font-weight: 700;
+    font-size: 64px;
+  }
+
+  &-2 {
+    font-weight: 700;
+    font-size: 48px;
+  }
+}
