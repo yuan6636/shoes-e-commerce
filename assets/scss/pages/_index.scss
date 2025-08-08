@@ -7,8 +7,7 @@
   background-color: $primary-300;
   color: $neutral-900;
   &:hover {
-    background-color: $neutral-900;
-    color: $primary-300;
+    color: $primary-500;
   }
 }
 
@@ -37,12 +36,23 @@
 }
 
 // Main
-.new-arrival-list {
-  row-gap: 40px;
+.new-arrival {
+  &-list {
+    row-gap: 40px;
+  }
+  &-image {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
 
 .best-seller-link {
   position: relative;
+
+  &:hover {
+    opacity: 0.7;
+  }
 
   .badge-wrapper {
     position: absolute;
@@ -106,6 +116,12 @@
 // Category section
 .category-link {
   position: relative;
+
+  &:hover {
+    h3 {
+      color: $primary-300;
+    }
+  }
 
   .category-text {
     position: absolute;

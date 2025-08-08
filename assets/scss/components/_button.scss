@@ -7,6 +7,9 @@
   &.filled {
     background-color: $neutral-900;
     color: $neutral-0;
+    &:hover {
+      background-color: $neutral-700;
+    }
   }
 }
 

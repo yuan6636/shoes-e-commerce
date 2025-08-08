@@ -74,14 +74,14 @@
   color: $primary-400;
   font-weight: 500;
 
+  &:hover {
+    color: $primary-500;
+  }
+
   .link-border {
     display: inline-block;
     padding-bottom: 4px;
     border-bottom: 1px solid $primary-400;
-
-    &:hover {
-      border-color: $neutral-900;
-    }
   }
 
   .arrow-up {

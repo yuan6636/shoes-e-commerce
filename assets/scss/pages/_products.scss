@@ -24,7 +24,7 @@
   }
 }
 
-/* Pagination */
+// Pagination 
 .page {
   & button {
     padding: 8px 15px;
@@ -72,7 +72,7 @@
   }
 }
 
-/* Media query */
+// Media query 
 @include tablet {
   .px-md-12 {
     padding-left: 12px;
