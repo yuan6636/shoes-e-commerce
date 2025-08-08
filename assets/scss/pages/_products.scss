@@ -44,12 +44,12 @@
   }
 
   &-icon {
-    & button {
+    button {
       padding: 10px;
-    }
-
-    & img {
-      display: block;
+      
+      img {
+        display: block;
+      }
     }
 
     &.disabled {
